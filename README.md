@@ -8,17 +8,21 @@ To write a program to predict the price of the house and number of occupants in 
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1.Load California housing data, select features and targets, and split into training and testing sets.
+Step 1:Start the program.
 
+Step 2: Load the California Housing dataset and select the first three features as inputs (X), and the target and an additional feature (Y) for prediction..
 
-2.Scale both X (features) and Y (targets) using StandardScaler.
+Step 3: Scale both the input features (X) and target variables (Y) using StandardScaler.
 
+Step 4: Initialize SGDRegressor and use MultiOutputRegressor to handle multiple output variables.
 
-3.Use SGDRegressor wrapped in MultiOutputRegressor to train on the scaled training data.
+Step 5: Initialize SGDRegressor and use MultiOutputRegressor to handle multiple output variables.
 
+Step 6: Train the model using the scaled training data, and predict outputs on the test data.
 
-4.Predict on test data, inverse transform the results, and calculate the mean squared error. 
+Step 7: Inverse transform predictions and evaluate the model using the mean squared error (MSE). Print the MSE and sample predictions.
 
+Step 6:Stop the program.
 
 ## Program:
 ```
@@ -69,9 +73,10 @@ print("\nPredictions\n",Y_pred[:5])
 ```
 
 ## Output:
-![Screenshot 2025-03-10 154901](https://github.com/user-attachments/assets/d94bd4a5-5363-400d-b9f8-991d1c662dde)
-![Screenshot 2025-03-10 154908](https://github.com/user-attachments/assets/85fc3a26-594c-448f-b08b-cfea90ac11c3)
-
+### df.head()
+![Screenshot 2025-04-27 100243](https://github.com/user-attachments/assets/5684120a-0043-4756-aa7b-465819174b9e)
+### MEAN SQUARED ERROR AND PREDICTIONS VALUE
+![Screenshot 2025-04-27 100251](https://github.com/user-attachments/assets/d66ec01b-4aa7-4af6-bc21-d01da018d49d)
 
 
 
